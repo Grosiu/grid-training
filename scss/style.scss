@@ -53,26 +53,33 @@ body {
 }
 
 .color-wrapper {
+    min-height: 300px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    &__item{
-        width: 100%;
-    }
+    grid-template-areas: 
+        "header header header header header header"
+        "main main main main side side"
+        "main main main main side side"
+        "main main main main side side"
+        "main main main main side side"
+        "footer footer footer footer footer footer";
 
     &__item--white {
         background-color: rgb(245, 245, 245);
-        grid-column: 1 / -1;
+        grid-area: header;
      }
     &__item--red { 
         background-color: rgb(201, 42, 42);
-        grid-column: 1 / 4;
-        grid-row: 2 / 7;
+        grid-area: main;
     } 
     &__item--green {
         background-color: green;
-        grid-row: 8;
-        grid-column: 1 / -1;
+        grid-area: side;
      }
+    &__item--rebeca {
+        background-color: rebeccapurple;
+        grid-area: footer;
+    }
 }
 
