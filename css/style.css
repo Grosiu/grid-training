@@ -16,5 +16,31 @@ html, body {
   width: 100%;
   font-family: "Karla", sans-serif;
   font-size: 16px;
+  background-color: #171717;
+}
+
+body {
+  padding: 15px;
+}
+
+/*
+    ### Gallery ###
+*/
+.gallery {
+  border: 2px solid whitesmoke;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.gallery-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 0px;
+}
+
+.gallery-wrapper__img {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

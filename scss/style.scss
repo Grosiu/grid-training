@@ -3,6 +3,7 @@
 */
 
 $fontfamily: "Karla", sans-serif;
+$bgcolor: #171717;
 
 /*
     ### Mixins ###
@@ -24,4 +25,30 @@ html, body {
     width: 100%;
     font-family: $fontfamily;
     font-size: 16px;
+    background-color: $bgcolor;
 }
+
+body {
+    padding: 15px;
+}
+
+/*
+    ### Gallery ###
+*/
+
+.gallery {
+    border: 2px solid rgb(245, 245, 245);
+    width: 80%;
+    margin: 0 auto;
+}
+
+.gallery-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+    &__img {
+        width: 100%;
+    }
+}
+
+
